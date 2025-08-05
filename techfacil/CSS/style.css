@@ -1,0 +1,120 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 11%;
+    background-color: transparent;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: #225378;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+main {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: #1f4e6d;
+    color: white;
+}
+
+.logo {
+    background-color: transparent;
+    color: white;
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.caixa_botoes { 
+    width: 55%;
+    height: 75%;
+    background-color: transparent;
+}
+
+.botao_geral {
+    margin-left: 1.5%;
+    width: 20%;
+    height: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #225378;
+    border: none;
+    color: white;
+    transition: background-color 0.4s, color 0.4s;
+    font-weight: bold;
+}
+
+.botao_geral:hover {
+    background-color: white;
+    color: #225378;
+}
+
+.conteudo-principal {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+
+/* Seções */
+.conteudo-principal section {
+    margin-bottom: 40px;
+}
+
+/* Títulos */
+.conteudo-principal h1,
+.conteudo-principal h2 {
+    color: #1f4e6d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal h3 {
+    color: #1f4e6d;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos */
+.conteudo-principal p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Lista */
+.conteudo-principal ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.conteudo-principal li {
+    margin-bottom: 10px;
+}
+
