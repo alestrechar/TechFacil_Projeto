@@ -6,6 +6,39 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    transition: 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode .conteudo-principal {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode header {
+    background-color: #0f2e4a;
+}
+
+body.dark-mode .card {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+body.dark-mode footer {
+    background-color: #0f2e4a;
+}
+
+body.dark-mode .conteudo-principal h1 {
+    color: white;
+}
+body.dark-mode .conteudo-principal h2 {
+    color: white;
+}
+body.dark-mode .conteudo-principal h3 {
+    color: white;
 }
 
 header {
@@ -79,8 +112,8 @@ footer {
     padding: 0 20px;
     background-color: #ffffff;
     border-radius: 8px;
+    transition: 0.3s;
 }
-
 
 /* Seções */
 .conteudo-principal section {
@@ -118,3 +151,57 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 30px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Rodapé */
+footer {
+    background-color: #16466e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.botaoDark {
+    width: 5%;
+    height: 70%;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-left: 3%;
+}
+.botaoDark:hover {
+    transform: translateY(-5px);
+}

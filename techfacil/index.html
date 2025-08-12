@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFácil - Início</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header> 
@@ -17,40 +18,75 @@
                 <a href="glossario.html"><button class="botao_geral">GLOSSÁRIO</button></a>
                 <a href="dicas.html"><button class="botao_geral">DICAS</button></a>
                 <a href="contato.html"><button class="botao_geral">CONTATO</button></a>
+                <button id="theme-toggle" class="botaoDark"><i class="fa-solid fa-moon" id="theme-icon"></i></button>
             </div>
         </nav>    
     </header>
 
     <main class="conteudo-principal">
-        <section class="intro">
-            <h1>Bem-vindo ao TechFácil</h1>
-            <p>O seu portal de aprendizado sobre tecnologia de forma descomplicada, acessível e prática. Sendo assim, aos que tem dificuldade uma ótima ferramenta!</p>
+        <section class="bem-vindo">
+            <h1>Bem-vindo ao <span>TechFácil</span></h1>
+            <p>O seu portal de aprendizado sobre tecnologia de forma descomplicada, acessível e prática. 
+               Aos que têm dificuldade, oferecemos uma ótima ferramenta para facilitar o aprendizado!</p>
         </section>
 
         <section class="sobre">
             <h2>Sobre o projeto</h2>
-            <p>O TechFácil nasceu com a missão de aproximar o público leigo do universo da tecnologia. Entendemos que termos técnicos, siglas e jargões podem ser confusos no início, por isso criamos um ambiente onde qualquer pessoa — independentemente da idade ou formação — possa aprender com facilidade.</p>
+            <p>O TechFácil nasceu com a missão de aproximar o público leigo do universo da tecnologia. 
+               Sabemos que termos técnicos, siglas e jargões podem ser confusos no início, por isso criamos 
+               um ambiente onde qualquer pessoa — independente da idade ou formação — possa aprender com facilidade.</p>
         </section>
 
-        <section class="objetivos">
+        <section class="conteudos">
             <h2>O que você vai encontrar aqui?</h2>
-            <ul>
-                <li>Explicações claras sobre os principais termos da informática e internet.</li>
-                <li>Dicas práticas para usar melhor computadores e celulares.</li>
-                <li>Glossário com significados simples para palavras técnicas.</li>
-                <li>Conteúdos pensados para quem está começando do zero.</li>
-            </ul>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Explicações Claras</h3>
+                    <p>Termos de informática e internet explicados de forma simples.</p>
+                </div>
+                <div class="card">
+                    <a href="glossario.html">
+                        <i class="fa-solid fa-book"></i>
+                        <h3>Glossário Técnico</h3>
+                        <p>Significados simples para palavras técnicas e siglas.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="dicas.html">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h3>Dicas Práticas</h3>
+                        <p>Truques para melhorar o uso de computadores e celulares.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h3>Conteúdos para Iniciantes</h3>
+                    <p>Material pensado para quem está começando do zero.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Aplicativos Úteis</h3>
+                    <p>Conheça ferramentas que podem facilitar seu dia a dia no computador e no celular.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-keyboard"></i>
+                    <h3>Atalhos e Truques do Teclado</h3>
+                    <p>Dicas para ganhar tempo e produtividade.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="publico-alvo">
+        <section class="publico">
             <h2>Para quem é o TechFácil?</h2>
-            <p>Nosso conteúdo é feito para estudantes, idosos, profissionais de outras áreas, pais, mães, educadores e todos que desejam entender mais sobre o mundo digital sem complicação.</p>
+            <p>Nosso conteúdo é feito para estudantes, idosos, profissionais de outras áreas, pais, mães, educadores 
+               e todos que desejam entender mais sobre o mundo digital sem complicação.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 TechFácil. Todos os direitos reservados.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
