@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     height: 100vh;
     transition: 0.3s;
+    overflow-x: hidden; /* Força a remoção da barra horizontal */
 }
 
 html {
@@ -231,6 +232,50 @@ footer {
 @media (max-width: 768px) {
     .cards-dicas {
         grid-template-columns: 1fr; /* no celular, fica um embaixo do outro */
+    }
+
+    .botao_geral {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    /* Diminui um pouco a fonte dos botões */
+    .botao_geral {
+        font-size: 13px; /* Era 15px */
+        margin-left: 1%;   /* Era 1.5% (junta um pouco mais) */
+    }
+
+    /* Diminui o ícone da lua/sol */
+    .botaoDark {
+        font-size: 26px; /* Era 30px */
+        margin-left: 1.5%;   /* Era 3% */
+    }
+
+    /* Diminui um pouco o logo */
+    .logo {
+        height: 80%; /* Era 90% (da altura da nav) */
+    }
+}
+
+/* Estágio 2: Quando a tela for menor que 950px */
+@media (max-width: 950px) {
+    
+    /* Diminui mais a fonte dos botões */
+    .botao_geral {
+        font-size: 10px; /* Era 13px */
+        margin-left: 1%; /* Era 1% (junta mais ainda) */
+    }
+
+    /* Diminui o ícone da lua/sol */
+    .botaoDark {
+        font-size: 20px; /* Era 26px */
+    }
+
+    /* Diminui mais o logo */
+    .logo {
+        height: 65%; /* Era 80% */
     }
 }
 
